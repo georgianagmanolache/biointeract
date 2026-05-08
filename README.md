@@ -1,77 +1,30 @@
-# Academic Project Page Template
+# BioInteract: A Large-Scale Multimodal Dataset for Evaluating Fine-Grained Semantic Understanding of Biotic Interactions
 
-> **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).
+We present [BioInteract](https://huggingface.co/datasets/BioInteract/BioInteract), a large-scale multimodal dataset that exposes limitations in fine-grained semantic understanding of biotic interactions—directional relationships between organisms whose meaning depends on subtle semantic cues.
 
-A clean, responsive template for academic project pages.
+## Models
 
+We evaluate CLIP-style models for text-to-image retrieval, such as [OpenAI](https://huggingface.co/openai/clip-vit-large-patch14), [MetaCLIP] (https://huggingface.co/facebook/metaclip-2-worldwide-huge-quickgelu), [SigLIP](https://huggingface.co/timm/ViT-SO400M-14-SigLIP), [SigLIP2](https://huggingface.co/timm/ViT-L-16-SigLIP2-256), as well as specialized models, such as [BioTrove-CLIP-B](https://huggingface.co/BGLab/BioTrove-CLIP), [BioCAP](https://huggingface.co/imageomics/biocap), [BioCLIP](https://huggingface.co/imageomics/bioclip), and [BioCLIP2](https://huggingface.co/imageomics/bioclip-2).
+We adopt proprietary multimodal language models (MLLMs) such as [GPT-5.4 mini](https://developers.openai.com/api/docs/models/gpt-5.4-mini), [Claude Sonnet 4.6](https://www.anthropic.com/claude/sonnet), and [Gemini 3 Flash Preview](https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview) for ranking prompting for each image and corresponding queries per image: `Does this image show {some query}? Answer with "Yes" or "No" and nothing else`. All proprietary models were evaluated via their APIs with deterministic decoding `temperature=0.0`.
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
-
-
-
-## Start using the template
-To start using the template click on `Use this Template`.
-
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
-
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
-
-## What's New
-
-- Modern, clean design with better mobile support
-- Improved SEO with proper meta tags and structured data
-- Performance improvements (lazy loading, optimized assets)
-- More Works dropdown
-- Copy button for BibTeX citations
-- Better accessibility
-
-## Components
-
-- Teaser video
-- Image carousel
-- YouTube video embedding
-- Video carousel
-- PDF poster viewer
-- BibTeX citation
-
-## Customization
-
-The HTML file has TODO comments showing what to replace:
-
-- Paper title, authors, institution, conference
-- Links (arXiv, GitHub, etc.)
-- Abstract and descriptions  
-- Videos, images, and PDFs
-- Related works in the dropdown
-- Meta tags for SEO and social sharing
-
-### Meta Tags
-The template includes meta tags for better search engine visibility and social media sharing. These appear in the `<head>` section and help with:
-- Google Scholar indexing
-- Social media previews (Twitter, Facebook, LinkedIn)
-- Search engine optimization
-
-Create a 1200x630px social preview image at `static/images/social_preview.png`.
-
-## Tips
-
-- Compress images with [TinyPNG](https://tinypng.com)
-- Use YouTube for large videos (>10MB)  
-- Replace the favicon in `static/images/`
-- Works with GitHub Pages
+| Name | Model URL |
+| General models |
+| OpenAI | [https://huggingface.co/openai/clip-vit-large-patch14](https://huggingface.co/openai/clip-vit-large-patch14) |
+| MetaCLIP | [https://huggingface.co/facebook/metaclip-2-worldwide-huge-quickgelu](https://huggingface.co/facebook/metaclip-2-worldwide-huge-quickgelu) |
+| SigLIP | [https://huggingface.co/timm/ViT-SO400M-14-SigLIP](https://huggingface.co/timm/ViT-SO400M-14-SigLIP) |
+| SigLIP2 | [https://huggingface.co/timm/ViT-L-16-SigLIP2-256](https://huggingface.co/timm/ViT-L-16-SigLIP2-256) |
+| --- | --- | 
+| Specialized models |
+| BioTrove-CLIP-B | [https://huggingface.co/BGLab/BioTrove-CLIP](https://huggingface.co/BGLab/BioTrove-CLIP) | 
+| BioCAP | [https://huggingface.co/imageomics/biocap](https://huggingface.co/imageomics/biocap) |
+| BioCLIP | [https://huggingface.co/imageomics/bioclip](https://huggingface.co/imageomics/bioclip) | 
+| BioCLIP2 | [https://huggingface.co/imageomics/bioclip-2](https://huggingface.co/imageomics/bioclip-2) | 
+| --- | --- | 
+| Proprietary multimodal language models |
+| GPT-5.4 mini | [https://developers.openai.com/api/docs/models/gpt-5.4-mini](https://developers.openai.com/api/docs/models/gpt-5.4-mini) |
+| Gemini 3 Flash Preview | [https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview](https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview) | 
+| Claude Sonnet 4.6 | [https://www.anthropic.com/claude/sonnet](https://www.anthropic.com/claude/sonnet) | 
+| --- | --- | 
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
