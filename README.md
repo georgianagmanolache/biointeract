@@ -9,6 +9,8 @@ We further introduce `BioInteract100`, an adversarial image retrieval benchmark 
 
 Curated from iNaturalist and validated against scientific literature, `BioInteract` contains 15.4K unique interactions spanning 6.5K taxa across 256K images. Each interaction is structured as a source-relation-target triplet, enabling controlled semantic perturbations.
 
+We also release the automated [data collection pipeline]https://anonymous.4open.science/r/biointeract-E615/data_collection_pipeline) which enables recreation of the dataset.
+
 Data is available via [HuggingFace](https://huggingface.co/datasets/BioInteract/BioInteract).
 
 ## Evaluation
