@@ -26,8 +26,8 @@ Starting from species interaction records, the notebook:
 
 Each example contains:
 
-`fileName` — image filename
-`caption` — question related to the image
+* `fileName` — image filename
+* `caption` — question related to the image
 
 
 ## Question Types
