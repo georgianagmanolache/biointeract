@@ -13,4 +13,6 @@ The generated image embeddings are stored and reused during evaluation, enabling
 
 ## Data preparation
 
-The notebook `embeddimgs.ipynb` prepares the evaluation datasets and generates the image embeddings for each image.
+The notebook `imgage_embeddimgs.ipynb` prepares the evaluation datasets and generates the image embeddings for each image.
+
+
