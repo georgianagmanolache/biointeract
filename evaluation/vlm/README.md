@@ -13,6 +13,14 @@ and nothing else.
 
 The evaluation measures whether VLMs correctly identify ecological interactions and whether they are sensitive to changes in wording, entity order, grammatical voice, and relational structure.
 
+## API Keys
+
+This project uses commercial vision-language model APIs (e.g., OpenAI, Anthropic, Google). Before running the benchmark, you must provide your own API credentials.
+
+Replace the placeholder values in the script with your personal API keys:
+
+```api = "YOUR_API_KEY"```
+
 ## Data preparation
 
 The notebook `data_preparation.ipynb` prepares the evaluation datasets and generates the natural-language questions used in the benchmark.
@@ -97,9 +105,3 @@ Example:
 
 Does this image show lady beetle with aphid?
 Answer with Yes or No and nothing else.
-
-
-
-
-
-
