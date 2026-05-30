@@ -18,7 +18,11 @@ Data is available via [HuggingFace](https://huggingface.co/datasets/BioInteract/
 ### Models
 
 We evaluate CLIP-style models for text-to-image retrieval, such as [OpenAI](https://huggingface.co/openai/clip-vit-large-patch14), [MetaCLIP](https://huggingface.co/facebook/metaclip-2-worldwide-huge-quickgelu), [SigLIP](https://huggingface.co/timm/ViT-SO400M-14-SigLIP), [SigLIP2](https://huggingface.co/timm/ViT-L-16-SigLIP2-256), as well as specialized models, such as [BioTrove-CLIP-B](https://huggingface.co/BGLab/BioTrove-CLIP), [BioCAP](https://huggingface.co/imageomics/biocap), [BioCLIP](https://huggingface.co/imageomics/bioclip), and [BioCLIP2](https://huggingface.co/imageomics/bioclip-2).
-We adopt proprietary multimodal language models (MLLMs) such as [GPT-5.4 mini](https://developers.openai.com/api/docs/models/gpt-5.4-mini), [Claude Sonnet 4.6](https://www.anthropic.com/claude/sonnet), and [Gemini 3 Flash Preview](https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview) for ranking prompting for each image and corresponding queries per image: `Does this image show {some query}? Answer with "Yes" or "No" and nothing else`. All proprietary models were evaluated via their APIs with deterministic decoding `temperature=0.0`.
+We adopt proprietary multimodal language models (MLLMs) such as [GPT-5.4 mini](https://developers.openai.com/api/docs/models/gpt-5.4-mini), [Claude Sonnet 4.6](https://www.anthropic.com/claude/sonnet), and [Gemini 3 Flash Preview](https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview) for ranking prompting for each image and corresponding queries per image: 
+
+`Does this image show {some query}? Answer with "Yes" or "No" and nothing else.` 
+
+All proprietary models were evaluated via their APIs with deterministic decoding `temperature=0.0`.
 
 | Name | Model URL |
 | --- | --- | 

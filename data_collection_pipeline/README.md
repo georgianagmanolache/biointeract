@@ -25,6 +25,3 @@ Run the following files step by step:
 2) interaction_data_validation.ipynb
 
 3) image_downloader.ipynb
-
-
-
