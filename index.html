@@ -321,9 +321,10 @@
 <section class="hero is-medium" style="margin-bottom: 1rem;">
   <div class="hero-body" style="padding-bottom: 1rem;">
     <div class="container">
-      <h1 class="title is-3">Dataset Description</h1>
+      <h1 class="title is-3">Dataset description</h1>
       <div class="content">
-        <p>
+        <p> <b>BioInteract</b> annotations enumerate 27 fields provided in Parquet format; the dataset is openly available 
+          (for download and browsing) on <a href="https://huggingface.co/datasets/BioInteract/BioInteract">HuggingFace Datasets</a>.
         </p><div class="image-container" style="text-align: center;">
         <img src="static/images/statistics.png" style="width: 70%; height: auto;">
         <p class="caption has-text-centered">
@@ -335,7 +336,20 @@
            including associations with families such as <i>Fabaceae</i>.
         </p>
         </div>
-        <p></p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-medium" style="margin-bottom: 1rem;">
+  <div class="hero-body" style="padding-bottom: 1rem;">
+    <div class="container">
+      <h1 class="title is-3">Dataset collection</h1>
+      <div class="content">
+        <p>
+          
+        </p>
         
       </div>
     </div>
@@ -352,14 +366,26 @@
           which fixes images for each query and uses models like GPT-4o to improve over initial text-to-image CLIP-style retrieval.
           We, thus, measure fine-grained semantic understanding in embedding similarity and binary (yes/no) questions.
         </p>
-
       </div>
+
       <div class="image-container" style="text-align: center;">
-        <img src="static/images/existing_benchmarks.png" style="width: 70%; height: auto;">
+        <img src="static/images/clip_table.png" style="width: 70%; height: auto;">
         <p class="caption has-text-centered">
-        Existing benchmarks, handpicked, and target only a single taxon; our new benchmarks are described below.
+        Performance on fine-grained semantic understanding of biotic interaction queries for different models. 
+        We report the mean Average Precision at k (mAP@k), mean Reciprocal Rank (mMRR), and mean Recall at k (mRecall@10) 
+        computed over semantically equivalent query variants. Bold and underlined entries indicate the best and the second 
+        best results, respectively.
         </p>
      </div>
+
+
+     <div class="image-container" style="text-align: center;">
+        <img src="static/images/vlm_table.png" style="width: 70%; height: auto;">
+        <p class="caption has-text-centered">
+        Performance on different general-purpose proprietary models grouped per query perturbation type.
+        </p>
+     </div>
+
     </div>
   </div>
 
